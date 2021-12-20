@@ -5,6 +5,11 @@ host = "0.0.0.0"
 
 # TiDB server port.
 port = 4000
+# alter-primary-key is used to control whether the primary keys are clustered. 
+# Note that this config is deprecated. Only valid when @@global.tidb_enable_clustered_index = 'int_only'.
+# Default is false, only the integer primary keys are clustered.
+# If it is true, all types of primary keys are nonclustered.
+alter-primary-key = true
 
 # Registered store name, [tikv, mocktikv]
 store = "mocktikv"
