@@ -53,8 +53,8 @@ interval = "15s"
 address = "pushgateway:9091"
 
 [schedule]
-max-merge-region-size = 20
-max-merge-region-keys = 200000
+max-merge-region-size = 32
+max-merge-region-keys = 320000
 split-merge-interval = "1h"
 max-snapshot-count = 3
 max-pending-peer-count = 64
